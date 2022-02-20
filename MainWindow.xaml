@@ -6,7 +6,7 @@
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Height="355" Width="495">
         <StackPanel Margin="20,10,0,0" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left" Width="320" Height="25">
             <Label x:Name="LabelSwitcherIPAddress" Content="Switcher IP Address:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" Height="25" Width="130"/>
-            <TextBox x:Name="TextBoxSwitcherIPAddress" HorizontalAlignment="Left" TextWrapping="Wrap" Text="192.168.10.240" VerticalAlignment="Center" TextAlignment="Center" Margin="0" MaxLength="15" MaxLines="1" Width="100" Height="18"/>
+            <TextBox x:Name="TextBoxSwitcherIPAddress" HorizontalAlignment="Left" TextWrapping="Wrap" Text="192.168.1.115" VerticalAlignment="Center" TextAlignment="Center" Margin="0" MaxLength="15" MaxLines="1" Width="100" Height="18"/>
             <Button x:Name="ButtonConnect" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.28,0.6" Margin="10,0,0,0" Click="ButtonConnect_Click" Height="20" Width="80"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" Orientation="Horizontal" Width="320" Height="25">
@@ -36,18 +36,18 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Cam1" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam1" Click="ButtonProgram_Click"/>
-            <Button Content="Cam2" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam2" Click="ButtonProgram_Click" Grid.Column="1"/>
-            <Button Content="Cam3" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam3" Click="ButtonProgram_Click" Grid.Column="2"/>
-            <Button Content="Cam4" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam4" Click="ButtonProgram_Click" Grid.Column="3"/>
-            <Button Content="Cam5" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam5" Click="ButtonProgram_Click" Grid.Column="4"/>
-            <Button Content="Cam6" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam6" Click="ButtonProgram_Click" Grid.Column="5"/>
-            <Button Content="Bars" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Bars" Click="ButtonProgram_Click" Grid.Column="4" Grid.Row="1"/>
-            <Button Content="Black" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Blk" Click="ButtonProgram_Click" Grid.Column="5" Grid.Row="1"/>
-            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Col1" Click="ButtonProgram_Click" Grid.Row="1">
+            <Button Content="CAM1" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM1" Click="ButtonProgram_Click"/>
+            <Button Content="CAM2" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM2" Click="ButtonProgram_Click" Grid.Column="1"/>
+            <Button Content="CAM3" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM3" Click="ButtonProgram_Click" Grid.Column="2"/>
+            <Button Content="CAM4" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM4" Click="ButtonProgram_Click" Grid.Column="3"/>
+            <Button Content="CAM5" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM5" Click="ButtonProgram_Click" Grid.Column="4"/>
+            <Button Content="Cam6" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM6" Click="ButtonProgram_Click" Grid.Column="5"/>
+            <Button Content="Bars" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="BARS" Click="ButtonProgram_Click" Grid.Column="4" Grid.Row="1"/>
+            <Button Content="Black" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="BLK" Click="ButtonProgram_Click" Grid.Column="5" Grid.Row="1"/>
+            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="COL1" Click="ButtonProgram_Click" Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Padding="0,5,0,0" HorizontalAlignment="Center" Width="40" Height="40"><Run Text="Color"/><LineBreak/><Run Text="1"/></TextBlock>
             </Button>
-            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Col2" Click="ButtonProgram_Click" Grid.Column="1" Grid.Row="1">
+            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="COL2" Click="ButtonProgram_Click" Grid.Column="1" Grid.Row="1">
                 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="40" Height="40" TextAlignment="Center" Padding="0,5,0,0"><Run Text="Color"/><LineBreak/><Run Text="2"/></TextBlock>
             </Button>
             <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="MP1" Click="ButtonProgram_Click" Grid.Column="2" Grid.Row="1">
@@ -70,18 +70,18 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Cam1" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam1" Click="ButtonPreview_Click"/>
-            <Button Content="Cam2" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam2" Click="ButtonPreview_Click" Grid.Column="1"/>
-            <Button Content="Cam3" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam3" Click="ButtonPreview_Click" Grid.Column="2"/>
-            <Button Content="Cam4" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam4" Click="ButtonPreview_Click" Grid.Column="3"/>
-            <Button Content="Cam5" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam5" Click="ButtonPreview_Click" Grid.Column="4"/>
-            <Button Content="Cam6" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Cam6" Click="ButtonPreview_Click" Grid.Column="5"/>
-            <Button Content="Bars" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Bars" Click="ButtonPreview_Click" Grid.Column="4" Grid.Row="1"/>
-            <Button Content="Black" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Blk" Click="ButtonPreview_Click" Grid.Column="5" Grid.Row="1"/>
-            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Col1" Click="ButtonPreview_Click" Grid.Row="1">
+            <Button Content="Cam1" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM1" Click="ButtonPreview_Click"/>
+            <Button Content="Cam2" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM2" Click="ButtonPreview_Click" Grid.Column="1"/>
+            <Button Content="Cam3" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM3" Click="ButtonPreview_Click" Grid.Column="2"/>
+            <Button Content="Cam4" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM4" Click="ButtonPreview_Click" Grid.Column="3"/>
+            <Button Content="Cam5" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM5" Click="ButtonPreview_Click" Grid.Column="4"/>
+            <Button Content="Cam6" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="CAM6" Click="ButtonPreview_Click" Grid.Column="5"/>
+            <Button Content="Bars" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="BARS" Click="ButtonPreview_Click" Grid.Column="4" Grid.Row="1"/>
+            <Button Content="Black" Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="BLK" Click="ButtonPreview_Click" Grid.Column="5" Grid.Row="1"/>
+            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="COL1" Click="ButtonPreview_Click" Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Padding="0,5,0,0" HorizontalAlignment="Center" Width="40" Height="40"><Run Text="Color"/><LineBreak/><Run Text="1"/></TextBlock>
             </Button>
-            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Col2" Click="ButtonPreview_Click" Grid.Column="1" Grid.Row="1">
+            <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="COL2" Click="ButtonPreview_Click" Grid.Column="1" Grid.Row="1">
                 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="40" Height="40" TextAlignment="Center" Padding="0,5,0,0"><Run Text="Color"/><LineBreak/><Run Text="2"/></TextBlock>
             </Button>
             <Button Width="40" Height="40" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tag="MP1" Click="ButtonPreview_Click" Grid.Column="2" Grid.Row="1">

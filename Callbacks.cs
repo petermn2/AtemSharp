@@ -26,38 +26,44 @@ namespace AtemSharp
 
     class MixEffectBlockCallback : IBMDSwitcherMixEffectBlockCallback
     {
+        // Events:
         public event SwitcherEventHandler ProgramInputChanged;
         public event SwitcherEventHandler PreviewInputChanged;
         public event SwitcherEventHandler TransitionFramesRemainingChanged;
         public event SwitcherEventHandler TransitionPositionChanged;
         public event SwitcherEventHandler InTransitionChanged;
-
-        void IBMDSwitcherMixEffectBlockCallback.PropertyChanged(_BMDSwitcherMixEffectBlockPropertyId propertyId)
+        public MixEffectBlockCallback() 
         {
-            switch (propertyId)
+        }
+
+        void IBMDSwitcherMixEffectBlockCallback.Notify(_BMDSwitcherMixEffectBlockEventType eventType)
+        {
+            switch (eventType)
             {
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdProgramInput:
+                case _BMDSwitcherMixEffectBlockEventType.bmdSwitcherMixEffectBlockEventTypeProgramInputChanged:
                     if (ProgramInputChanged != null)
                         ProgramInputChanged();
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdPreviewInput:
+                case _BMDSwitcherMixEffectBlockEventType.bmdSwitcherMixEffectBlockEventTypePreviewInputChanged:
                     if (PreviewInputChanged != null)
                         PreviewInputChanged();
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdTransitionFramesRemaining:
+                case _BMDSwitcherMixEffectBlockEventType.bmdSwitcherMixEffectBlockEventTypeTransitionFramesRemainingChanged:
                     if (TransitionFramesRemainingChanged != null)
                         TransitionFramesRemainingChanged();
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdTransitionPosition:
+                case _BMDSwitcherMixEffectBlockEventType.bmdSwitcherMixEffectBlockEventTypeTransitionPositionChanged:
                     if (TransitionPositionChanged != null)
                         TransitionPositionChanged();
                     break;
-                case _BMDSwitcherMixEffectBlockPropertyId.bmdSwitcherMixEffectBlockPropertyIdInTransition:
+                case _BMDSwitcherMixEffectBlockEventType.bmdSwitcherMixEffectBlockEventTypeInTransitionChanged:
                     if (InTransitionChanged != null)
                         InTransitionChanged();
                     break;
             }
         }
+
+
     }
 
     class InputCallback : IBMDSwitcherInputCallback
